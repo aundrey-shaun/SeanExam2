@@ -8,11 +8,13 @@ import androidx.appcompat.app.AppCompatActivity
 class AboutActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        TODO("NOT IMPLEMENTED EXEMPTION")
-        setContentView(TextView(this).apply {
-            text = "This is the About screen (Explicit Intent Example)"
-            textSize = 18f
-            gravity = Gravity.CENTER
-        })
+        // FIX: removed crashing two-do
+        setContentView(
+            TextView(this).apply {
+                text = "This is the About screen (Explicit Intent Example)"
+                textSize = 18f
+                gravity = Gravity.CENTER
+            }
+        )
     }
 }
